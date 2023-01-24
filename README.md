@@ -10,6 +10,6 @@ Here is a list of voice commands you can use:
     <br/>"from wikipedia": finds info from wikipedia
     <br/>"your name": gives the name of the AI
     <br/>"open [website name]": opens up a website 
-    
-<br/>Everything else is sent to wolfram alpha to compute
+    <br/>Everything else is sent to wolfram alpha to compute
    
+Wolfram Alpha and Google News APIs are used to return the news and calculate more complex questions.
