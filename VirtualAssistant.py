@@ -3,14 +3,8 @@ import speech_recognition as sr
 import webbrowser 
 import datetime 
 import wikipedia
-#import json
 import requests
 import wolframalpha
-
-name
-vol
-rate
-gender 
 
 def takeCommand():
     r = sr.Recognizer()
@@ -101,7 +95,7 @@ def Take_query():
             query_params = {
                     "source": "cnn",
                     "sortBy": "relevance",
-                    "apiKey": "c9445449ee9a473d8744b362e56c821c"
+                    "apiKey": "xxx"
             }
             main_url = "https://newsapi.org/v1/articles"
             res = requests.get(main_url, params=query_params)
@@ -128,7 +122,7 @@ def Take_query():
             speak(f"My name is {name}")
 
         else:
-            app_id = 'VQLUPY-JE6P9KQ9L8'  
+            app_id = 'xxx'  
             the_client = wolframalpha.Client(app_id)  
             response = the_client.query(query)  
 
@@ -137,10 +131,7 @@ def Take_query():
                 print(answer)
                 speak(answer)
             except Exception as e:
-                speak("Sorry I couldn't understand your query")
-   
-      
-            
+                speak("Sorry I couldn't understand your query")         
  
 if __name__ == '__main__':
      
